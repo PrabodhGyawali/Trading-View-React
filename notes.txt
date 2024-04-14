@@ -1,0 +1,18 @@
+Notes -> React trading view implementation:
+
+	- React destructuring
+	- React hooks
+	- React states
+
+	Search bar -> use the Symbol Search widget
+	
+	Things that slowed us down:
+	- props
+
+Feedback to fix:
+	1. Add props in dependencies of useEffect hook
+	2. Use Flex instead of grid
+	3. No need to clear container when unmounting
+	
+
+	
