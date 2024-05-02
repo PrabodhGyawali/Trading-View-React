@@ -1,5 +1,9 @@
-body {
+  #root {
+    height: 100vh;
+  }
+  body {
     margin: 0;
+    height: 100vh;
   }
   
   .dark {
@@ -8,17 +12,26 @@ body {
   }
   
   /* Page Layout */
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 10px;
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Navigation */
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
   }
   .chart-top {
-    grid-column: span 2;
+    padding: 1%;
   }
   .chart-bottom {
-    grid-column: span 2;
+    padding: 1%;
   }
   
   /* The switch - the box around the slider */
@@ -91,14 +104,10 @@ body {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
-    float: left;
-    width: 40%;
   }
   
   /* Style the submit button */
   .searchBar button {
-    float: left;
-    width: 5%;
     padding: 10px;
     background: #2196f3;
     color: white;

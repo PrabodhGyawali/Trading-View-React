@@ -13,7 +13,7 @@ function App() {
   function changeTheme() {
     setTheme(!theme);
     // Change "grid-container"
-    var container = document.querySelector(".grid-container");
+    var container = document.querySelector(".flex-container");
     var search = document.querySelector(".searchBar input");
     if (theme) {
       container.classList.add("dark");
@@ -26,16 +26,19 @@ function App() {
 
   return (
     <div className="grid-container">
-      <div className="searchBar">
-        <input type="text" placeholder="Search.." name="search" />
-        <button onClick={search}>
-          <i className="fa fa-search"></i>
-        </button>
+      <div class="nav">
+        <div className="searchBar">
+          <input type="text" placeholder="Search.." name="search" />
+          <button onClick={search}>
+            <i className="fa fa-search"></i>
+          </button>
+        </div>
+        <label className="switch">
+          <input type="checkbox" onClick={changeTheme} />
+          <span className="slider round"></span>
+        </label>
       </div>
-      <label className="switch">
-        <input type="checkbox" onClick={changeTheme} />
-        <span className="slider round"></span>
-      </label>
+      
       <ChartTop symbol={symbol} theme={theme} />
       <ChartBottom symbol={symbol} theme={theme} />
     </div>

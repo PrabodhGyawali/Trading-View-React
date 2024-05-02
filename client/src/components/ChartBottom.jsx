@@ -34,7 +34,7 @@ function ChartBottom(props) {
     return () => {
       container.innerHTML = "";
     };
-  });
+  }, [props.symbol, props.theme]);
 
   return (
     <div
