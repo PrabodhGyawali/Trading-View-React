@@ -11,7 +11,7 @@ function ChartBottom(props) {
     script.async = true;
     const config = {
       width: "100%",
-      height: "610",
+      height: "100%",
       symbol: props.symbol, // "NASDAQ:AAPL",
       interval: "D",
       timezone: "Etc/UTC",
@@ -39,7 +39,7 @@ function ChartBottom(props) {
   return (
     <div
       className="chart-bottom"
-      style={{ height: "100%", width: "100%" }}
+      style={{height: "100%"}}
     ></div>
   );
 }

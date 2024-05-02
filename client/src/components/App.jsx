@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Nav from "./Nav.jsx";
 import ChartTop from "./ChartTop.jsx";
 import ChartBottom from "./ChartBottom.jsx";
 
@@ -25,21 +26,8 @@ function App() {
   }
 
   return (
-    <div className="grid-container">
-      <div class="nav">
-        <div className="searchBar">
-          <input type="text" placeholder="Search.." name="search" />
-          <button onClick={search}>
-            <i className="fa fa-search"></i>
-          </button>
-        </div>
-        <label className="switch">
-          <input type="checkbox" onClick={changeTheme} />
-          <span className="slider round"></span>
-        </label>
-      </div>
-
-      {/* <Nav/> */}
+    <div className="flex-container">
+      <Nav search={search} changeTheme={changeTheme} />
       <ChartTop symbol={symbol} theme={theme} />
       <ChartBottom symbol={symbol} theme={theme} />
     </div>
