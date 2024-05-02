@@ -37,10 +37,7 @@ function ChartBottom(props) {
   }, [props.symbol, props.theme]);
 
   return (
-    <div
-      className="chart-bottom"
-      style={{height: "100%"}}
-    ></div>
+    <div className="chart-bottom"></div>
   );
 }
 

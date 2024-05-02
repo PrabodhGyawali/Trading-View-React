@@ -3,7 +3,8 @@ import Nav from "./Nav.jsx";
 import ChartTop from "./ChartTop.jsx";
 import ChartBottom from "./ChartBottom.jsx";
 
-function App() {
+
+function StockPage() {
   const [symbol, setSymbol] = useState("NASDAQ:AAPL");
   const [theme, setTheme] = useState(true); // true for light, false for dark
 
@@ -34,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default StockPage;

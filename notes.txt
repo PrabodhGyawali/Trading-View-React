@@ -1,8 +1,5 @@
-Tasks to fix:
-1. Create different css files for different components
-2. Make website non scrollable
-	
 Tasks to do:
+
 	1. User login system
 		- Import a SQL database from our ICH server
 		- Create a login Page / Save sessions in the presentation layer
@@ -10,4 +7,14 @@ Tasks to do:
 		- Create an API Controller to save search history of user
 		- Create an API controller to save user settings in the Cookies
 		- Learn Caching
+
+	2. Page navigation with React: https://reactnative.dev/docs/navigation
+	- Understand what is Vite: apparently a bundler
+
+	3. Learning how to use npm 
+		- $ npm view <package-name>
 	
+	4. Update dependency version
+		$ npm update --save
+		Learn about the new ReactDOM functions etc as I am running old react-version
+		Eg: ReactDOM.render is deprecated
