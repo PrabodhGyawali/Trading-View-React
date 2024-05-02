@@ -1,18 +1,13 @@
-Notes -> React trading view implementation:
-
-	- React destructuring
-	- React hooks
-	- React states
-
-	Search bar -> use the Symbol Search widget
+Tasks to fix:
+1. Create different css files for different components
+2. Make website non scrollable
 	
-	Things that slowed us down:
-	- props
-
-Feedback to fix:
-	1. Add props in dependencies of useEffect hook
-	2. Use Flex instead of grid
-	3. No need to clear container when unmounting
-	
-
+Tasks to do:
+	1. User login system
+		- Import a SQL database from our ICH server
+		- Create a login Page / Save sessions in the presentation layer
+		- Allow user to create an account and login using MVC model in Flask
+		- Create an API Controller to save search history of user
+		- Create an API controller to save user settings in the Cookies
+		- Learn Caching
 	

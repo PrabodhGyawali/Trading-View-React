@@ -38,7 +38,8 @@ function App() {
           <span className="slider round"></span>
         </label>
       </div>
-      
+
+      {/* <Nav/> */}
       <ChartTop symbol={symbol} theme={theme} />
       <ChartBottom symbol={symbol} theme={theme} />
     </div>
