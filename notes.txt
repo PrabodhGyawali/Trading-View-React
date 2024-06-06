@@ -18,3 +18,16 @@ Tasks to do:
 		$ npm update --save
 		Learn about the new ReactDOM functions etc as I am running old react-version
 		Eg: ReactDOM.render is deprecated
+
+Extra:
+	- Understand that user can disable Javascript on the client side, validation/react client won't work
+	- __repr__ attribute in db.Model
+	- Mechanisms for dependency injections in Flask:
+		1. Application & Request Contexts
+		2. Blueprints
+		3. Before Requests and After Request Decorators
+		4. App Factory function
+		5. Extensions to inject additional functionality
+	- Explore: https://github.com/pallets/flask
+		- Dependabot -> automate dependency updates
+			- https://docs.github.com/en/code-security/dependabot 
